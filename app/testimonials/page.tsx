@@ -1,7 +1,12 @@
-import React from 'react';
+import SectionHeading from "@/components/SectionHeading";
+import React from "react";
 
 const Testimonialpage = () => {
-	return <div>Testimonialpage</div>;
+  return (
+    <div>
+      <SectionHeading text="Testimonials" />
+    </div>
+  );
 };
 
 export default Testimonialpage;

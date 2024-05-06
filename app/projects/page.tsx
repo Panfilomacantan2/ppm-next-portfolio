@@ -7,11 +7,12 @@ import project from '/public/assets/project.jpg';
 import { ExternalLink, Github } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Button } from '@/components/ui/button';
+import SectionHeading from '@/components/SectionHeading';
 
 const ProjectPage = () => {
 	return (
 		<section className="min-h-screen container py-32">
-			<h1 className="text-center mb-10 font-bold text-lg">Projects</h1>
+			<SectionHeading text="Projects" />
 			<div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
 				{Array.from({ length: 6 }).map((_, idx) => {
 					return (
@@ -24,7 +25,7 @@ const ProjectPage = () => {
 									<CardContent>
 										<Image src={project} width={200} height={300} placeholder="blur" alt="project 1" className="rounded-sm" />
 									</CardContent>
-									<CardFooter className="flex justify-between items-center text-sm">
+									<CardFooter className="flex justify-between items-center space-x-2 text-sm">
 										<Button variant="secondary" asChild>
 											<Link href="#" className="flex space-x-1 justify-center items-center">
 												<Github size={16} />
