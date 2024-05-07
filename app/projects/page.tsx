@@ -23,7 +23,7 @@ const ProjectPage = () => {
 										<CardTitle className="text-sm">Project {idx + 1}</CardTitle>
 									</CardHeader>
 									<CardContent>
-										<Image src={project} width={200} height={300} placeholder="blur" alt="project 1" className="rounded-sm" />
+										<Image src={project} width={200} height={100} placeholder="blur" alt="project 1" className="rounded-sm" />
 									</CardContent>
 									<CardFooter className="flex justify-between items-center space-x-2 text-sm">
 										<Button variant="secondary" asChild>
