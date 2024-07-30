@@ -15,16 +15,16 @@ const Footer = () => {
 			</div>
 
 			<div className="flex my-4 space-x-4 ">
-				<Link href="/" className="cursor-pointer text-lg">
+				<Link href="/" className="cursor-pointer text-lg" target="_blank">
 					<FaGithub />
 				</Link>
-				<Link href="/" className="cursor-pointer text-lg">
+				<Link href="/" className="cursor-pointer text-lg" target="_blank">
 					<FaLinkedin />
 				</Link>
-				<Link href="/" className="cursor-pointer text-lg">
+				<Link href="/" className="cursor-pointer text-lg" target="_blank">
 					<FaFacebook />
 				</Link>
-				<Link href="/" className="cursor-pointer text-lg">
+				<Link href="/" className="cursor-pointer text-lg" target="_blank">
 					<SiGmail />
 				</Link>
 			</div>

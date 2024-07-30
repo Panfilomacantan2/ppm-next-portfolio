@@ -1,73 +1,41 @@
 export const NavLinks = [
 	{
 		title: 'Home',
+		value: 'Home',
 		route: '/',
 	},
 	{
-		title: 'About Me',
+		title: 'About',
+		value: 'About',
+
 		route: '/about',
 	},
 	{
 		title: 'Projects',
+		value: 'Projects',
+
 		route: '/projects',
 	},
 	{
 		title: 'Contact',
+		value: 'Contact',
+
 		route: '/contact',
 	},
 	{
 		title: 'Testimonials',
+		value: 'Testimonials',
 		route: '/testimonials',
 	},
 ];
 
 export const projectLists = [
 	{
-		title: 'Project 1',
+		title: 'Youtube Music Downloder',
 		description: 'Description',
 		stack: ['React', 'Next.js', 'Typescript'],
-		imageSrc: '/images/project1.png',
-		githubUrl: 'https://github.com',
-		demoUrl: 'https://demo.com',
-	},
-	{
-		title: 'Project 2',
-		description: 'Description',
-		stack: ['React', 'Next.js', 'Typescript'],
-		imageSrc: '/images/project1.png',
-		githubUrl: 'https://github.com',
-		demoUrl: 'https://demo.com',
-	},
-	{
-		title: 'Project 3',
-		description: 'Description',
-		stack: ['React', 'Next.js', 'Typescript'],
-		imageSrc: '/images/project1.png',
-		githubUrl: 'https://github.com',
-		demoUrl: 'https://demo.com',
-	},
-	{
-		title: 'Project 4',
-		description: 'Description',
-		stack: ['React', 'Next.js', 'Typescript'],
-		imageSrc: '/images/project1.png',
-		githubUrl: 'https://github.com',
-		demoUrl: 'https://demo.com',
-	},
-	{
-		title: 'Project 5',
-		description: 'Description',
-		stack: ['React', 'Next.js', 'Typescript'],
-		imageSrc: '/images/project1.png',
-		githubUrl: 'https://github.com',
-		demoUrl: 'https://demo.com',
-	},
-	{
-		title: 'Project 6',
-		description: 'Description',
-		stack: ['React', 'Next.js', 'Typescript'],
-		imageSrc: '/images/project1.png',
-		githubUrl: 'https://github.com',
-		demoUrl: 'https://demo.com',
+		imageSrc: '/assets/proj_yd.png',
+		githubUrl: 'https://github.com/Panfilomacantan2/vite-yd3',
+		demoUrl: 'https://ppm-youtube-to-mp3.vercel.app/',
 	},
 ];

@@ -12,6 +12,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Home, SearchSlash, FolderGit2, User, MessageCircle } from 'lucide-react';
 import { IoHomeOutline } from 'react-icons/io5';
+import { Tabs } from './ui/tabs';
+import { SideBarTabs } from './ui/sidebar-tabs';
 
 export function SideBar() {
 	const pathname = usePathname();
@@ -20,13 +22,13 @@ export function SideBar() {
 	return (
 		<Sheet>
 			<SheetTrigger asChild>
-				<div className="lg:hidden cursor-pointer">
-					<Menu />
+				<div className="ml-2 lg:hidden cursor-pointer">
+					<Menu size={30}/>
 				</div>
 			</SheetTrigger>
 			<SheetContent side="left">
 				<nav className="flex flex-col space-y-4">
-					{NavLinks.map((link, idx) => {
+					{/* {NavLinks.map((link, idx) => {
 						const isActive = pathname === link.route;
 						return (
 							<Link
@@ -45,14 +47,9 @@ export function SideBar() {
 								</SheetClose>
 							</Link>
 						);
-					})}
+					})} */}
+					<SideBarTabs tabs={NavLinks} />
 				</nav>
-
-				<SheetFooter className="bottom-5 right-5 absolute">
-					<SheetClose asChild>
-						<LogOut />
-					</SheetClose>
-				</SheetFooter>
 			</SheetContent>
 		</Sheet>
 	);

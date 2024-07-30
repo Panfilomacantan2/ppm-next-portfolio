@@ -6,7 +6,7 @@ import React from "react";
 const AboutPage = () => {
   return (
     <section className="min-h-screen  py-32">
-      <SectionHeading text="About Me" />
+      <SectionHeading text="About Me" className="mb-10" />
       <Tools />
       <Education />
     </section>

@@ -6,6 +6,7 @@ import ModeToggle from './ToggleDarkMode';
 import { usePathname, useRouter } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { SideBar } from './SideBar';
+import { Tabs } from './ui/tabs';
 
 export default function NavBar() {
 	const pathname = usePathname();
@@ -22,7 +23,7 @@ export default function NavBar() {
 						</span>
 					</Link>
 					<nav className="ml-auto flex items-center space-x-3">
-						{NavLinks.map((link) => {
+						{/* {NavLinks.map((link) => {
 							const isActive = pathname === link.route;
 							return (
 								<Link
@@ -38,7 +39,9 @@ export default function NavBar() {
 									{link.title}
 								</Link>
 							);
-						})}
+						})} */}
+
+						<Tabs tabs={NavLinks} />
 
 						<ModeToggle />
 

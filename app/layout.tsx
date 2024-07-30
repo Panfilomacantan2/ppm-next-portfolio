@@ -22,8 +22,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<head />
-			<body className={cn('min-h-screen bg-background font-sans antialiased', fontSans.variable)}>
-				<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+			<body className={cn('min-h-screen max-w-screen bg-background font-sans antialiased', fontSans.variable)}>
+				<ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
 					<NavBar />
 					<main className="min-h-screen flex justify-center items-center">{children}</main>
 					{/* <Toaster /> */}

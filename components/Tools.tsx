@@ -1,26 +1,24 @@
-import React from "react";
+import Image from 'next/image';
+import React from 'react';
 
 const Tools = () => {
-  return (
-    <section className="container">
-      <h1 className="text-center  mb-10 font-bold text-lg">Tools</h1>
+	return (
+		<section className="container">
+			<h1 className="text-center font-bold text-lg">Tools</h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-        {Array.from({ length: 6 }).map((_, idx) => {
-          return (
-            <div key={idx}>
-              <h1>Tool {idx + 1}</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Praesentium ipsa maiores.
-              </p>
-              <h3>Stack used</h3>
-            </div>
-          );
-        })}
-      </div>
-    </section>
-  );
+			<p className="text-center my-5 dark:text-gray-400">These are the tools that I mostly used in all my projects!</p>
+
+			<div className="flex justify-center flex-shrink-0 flex-wrap gap-4">
+				{Array.from({ length: 6 }).map((_, idx) => {
+					return (
+						<div key={idx}>
+							<Image src="/assets/nextjs-original.svg" height={50} width={50} alt="nextjs" />
+						</div>
+					);
+				})}
+			</div>
+		</section>
+	);
 };
 
 export default Tools;
