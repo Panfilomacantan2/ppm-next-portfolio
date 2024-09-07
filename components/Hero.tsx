@@ -26,7 +26,7 @@ export default function HeroPage() {
             </h3>
 
             <SectionHeading
-              text="{ Frontend React Developer }"
+              text="[Frontend React Developer]"
               className="max-w-md"
             />
           </div>

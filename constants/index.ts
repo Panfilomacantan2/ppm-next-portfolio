@@ -29,7 +29,8 @@ export const NavLinks = [
 export const projectLists = [
   {
     title: "Shesh",
-    description: "Description",
+    description:
+      "This website allows you to download music by converting YouTube videos to MP3 format. It’s straightforward to use, has no ads, and provides a limited but effective service.",
     stack: ["React", "Shadcn", "Tailwindcss", "RapidAPI"],
     imageSrc: "/assets/ytd.jpeg",
     githubUrl: "https://github.com/Panfilomacantan2/vite-yd3",
@@ -38,7 +39,7 @@ export const projectLists = [
   {
     title: "BrewCraft",
     description: "Description",
-    stack: ["Next.js", "Typescript", "Shadcn", "Tailwindcss"],
+    stack: ["Next.js", "Typescript", "Shadcn", "Tailwindcss", "Zustand"],
     imageSrc: "/assets/brewcraft.jpeg",
     githubUrl: "https://github.com/Panfilomacantan2/vite-yd3",
     demoUrl: "https://ppm-youtube-to-mp3.vercel.app/",

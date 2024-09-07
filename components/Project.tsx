@@ -32,19 +32,20 @@ export default function ProjectPage() {
                 />
               </div>
 
-              <div className="p-4">
+              <div className="p-4 space-y-2">
                 <h2 className="text-base font-medium">{proj.title}</h2>
-                <div className="w-full flex flex-wrap">
+                <div className="flex w-full flex-wrap">
                   {proj.stack.map((stack) => (
                     <span
                       key={stack}
-                      className="mr-2 text-sm text-foreground/60"
+                      className="mr-2 text-sm text-foreground/80"
                     >
-                      <span className="text-sky-500">#</span>{stack}
+                      <span className="text-sky-500">#</span>
+                      {stack}
                     </span>
                   ))}
                 </div>
-                <p className="text-sm text-gray-500">{proj.description}</p>
+                <p className="text-sm text-foreground/70">{proj.description}</p>
               </div>
             </CardContent>
             <CardFooter className="flex flex-col text-sm">
@@ -66,7 +67,7 @@ export default function ProjectPage() {
                     target="_blank"
                   >
                     <ExternalLink size={16} />
-                    <p>Demo</p>
+                    <p>Live</p>
                   </Link>
                 </Button>
               </div>
