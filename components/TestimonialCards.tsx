@@ -1,10 +1,10 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { InfiniteMovingCards } from './ui/infinite-moving-cards';
+import { InfiniteMovingCardsComponent } from './ui/infinite-moving-cards';
 
-export function InfiniteMovingCardsDemo() {
-	return <InfiniteMovingCards items={testimonials} direction="right" speed="slow" pauseOnHover={false} />;
+export function InfiniteMovingCards() {
+	return <InfiniteMovingCardsComponent items={testimonials} direction="right" speed="slow" pauseOnHover={false} className='border-border'/>;
 }
 
 const testimonials = [

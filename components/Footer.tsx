@@ -1,35 +1,51 @@
-import Link from 'next/link';
-import React from 'react';
-import { FaGithub } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa';
-import { FaFacebook } from 'react-icons/fa';
-import { SiGmail } from 'react-icons/si';
+import Link from "next/link";
+import React from "react";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 const Footer = () => {
-	return (
-		<footer className="container flex flex-col lg:flex-row justify-between items-start lg:items-center py-5 text-sm">
-			<div className="flex flex-col  lg:flex-row lg:space-x-10">
-				<p>© {new Date().getFullYear()} panfilo.dev</p>
-				<p>All Rights Reserved</p>
-				<p>Panfilo Panong Macantan</p>
-			</div>
+  return (
+    <footer className="container flex flex-col items-start justify-between py-5 text-sm lg:flex-row lg:items-center">
+      <div className="flex flex-col lg:flex-row lg:space-x-10">
+        <p>©{new Date().getFullYear()} panfilo.dev</p>
+        <p>All Rights Reserved</p>
+        <p>Panfilo Panong Macantan</p>
+      </div>
 
-			<div className="flex my-4 space-x-4 ">
-				<Link href="/" className="cursor-pointer text-lg" target="_blank">
-					<FaGithub />
-				</Link>
-				<Link href="/" className="cursor-pointer text-lg" target="_blank">
-					<FaLinkedin />
-				</Link>
-				<Link href="/" className="cursor-pointer text-lg" target="_blank">
-					<FaFacebook />
-				</Link>
-				<Link href="/" className="cursor-pointer text-lg" target="_blank">
-					<SiGmail />
-				</Link>
-			</div>
-		</footer>
-	);
+      <div className="my-4 flex space-x-4">
+        <Link
+          href="https://github.com/Panfilomacantan2"
+          className="cursor-pointer text-lg"
+          target="_blank"
+        >
+          <FaGithub />
+        </Link>
+        <Link
+          href="https://www.linkedin.com/in/panfilo-panong-macantan/"
+          className="cursor-pointer text-lg"
+          target="_blank"
+        >
+          <FaLinkedin />
+        </Link>
+        <Link
+          href="https://www.facebook.com/panfilo.macantan/"
+          className="cursor-pointer text-lg"
+          target="_blank"
+        >
+          <FaFacebook />
+        </Link>
+        <Link
+          href="mailto:panfilomacantan.pm@gmail.com"
+          className="cursor-pointer text-lg"
+          target="_blank"
+        >
+          <SiGmail />
+        </Link>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

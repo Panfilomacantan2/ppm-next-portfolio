@@ -67,7 +67,7 @@ export const Tabs = ({
 							}}
 							onMouseEnter={() => setHovering(true)}
 							onMouseLeave={() => setHovering(false)}
-							className={cn('hidden lg:flex relative px-4 py-2 rounded-full ', tabClassName)}
+							className={cn('hidden lg:flex relative px-4 py-2 rounded-full', tabClassName)}
 							style={{
 								transformStyle: 'preserve-3d',
 							}}
@@ -76,15 +76,21 @@ export const Tabs = ({
 								<motion.div
 									layoutId="clickedbutton"
 									transition={{ type: 'spring', bounce: 0.3, duration: 0.6 }}
-									className={cn('absolute inset-0 bg-gray-200 dark:bg-zinc-800 rounded-md ', activeTabClassName, isActive)}
+									className={cn('absolute inset-0 bg-sky-700 text-white rounded-md ', activeTabClassName)}
 								/>
 							)}
-							<span className="relative block text-black dark:text-gray-300">{tab.title}</span>
+							<span
+								className={cn('relative block text-foreground/60   font-normal', {
+									'text-white': isActive,
+								})}
+							>
+								{tab.title}
+							</span>
 						</Link>
 					);
 				})}
 			</div>
-			<FadeInDiv tabs={tabs} active={active} key={active.value} hovering={hovering} className={cn('mt-32', contentClassName)} />
+			<FadeInDiv tabs={tabs} active={active} key={active.value} hovering={hovering} className={cn('', contentClassName)} />
 		</>
 	);
 };

@@ -34,9 +34,8 @@ export const SideBarTabs = ({
 	const moveSelectedTabToTop = (idx: number) => {
 		const newTabs = [...propTabs];
 		const selectedTab = newTabs.splice(idx, 1);
-		newTabs.unshift(selectedTab[0]);
-
 		startTransition(() => {
+			newTabs.unshift(selectedTab[0]);
 			setTabs(newTabs);
 			setActive(newTabs[0]);
 		});
@@ -57,6 +56,8 @@ export const SideBarTabs = ({
 		<>
 			<div className={cn('flex flex-col items-start justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full', containerClassName)}>
 				{propTabs.map((tab, idx) => {
+					const isActive = pathname === tab.route;
+
 					return (
 						<Link
 							key={tab.route}
@@ -75,11 +76,17 @@ export const SideBarTabs = ({
 								<motion.div
 									layoutId="clickedbutton"
 									transition={{ type: 'spring', bounce: 0.3, duration: 0.6 }}
-									className={cn('absolute inset-0 bg-gray-200 dark:bg-zinc-800 rounded-md ', activeTabClassName)}
+									className={cn('absolute inset-0 bg-sky-700 rounded-md text-white', activeTabClassName)}
 								/>
 							)}
 							<SheetClose asChild>
-								<span className="relative block text-black dark:text-white">{tab.title}</span>
+								<span
+									className={cn('relative block text-foreground/60 font-normal', {
+										'text-white': isActive,
+									})}
+								>
+									{tab.title}
+								</span>
 							</SheetClose>
 						</Link>
 					);
