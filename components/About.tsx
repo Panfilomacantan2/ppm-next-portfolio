@@ -8,19 +8,20 @@ export default function AboutPage() {
     <section id="about" className="min-h-screen py-32">
       <SectionHeading text="About Me" className="mb-10" />
 
-      <div className="container flex max-w-md flex-col justify-center text-center text-foreground">
-        <p className="w-full"></p>
+      <p className="text-center text-foreground/80 px-3">
+        Hello, <span className="text-sky-500">I&apos;m Panfilo.</span> I
+        graduated from Eastern Visayas State University, Tanauan Campus, in
+        2024. I began learning to code during my senior year of high school and
+        have continued to develop my skills since then. I am passionate about
+        exploring and creating projects with the latest technologies used in the
+        IT industry.
+      </p>
 
-        <p className="text-center">
-          I have playing guitar, watching random funny videos and mostly I love
-          codings!
-        </p>
-      </div>
+      <SectionHeading text="Tools" className="mt-20" />
 
-      <h1 className="text-center text-lg font-bold">Tools</h1>
-
-      <p className="my-5 text-center dark:text-gray-400">
-        These are the tools that I mostly used in all my projects!
+      <p className="my-5 px-3 text-center text-foreground/80">
+        Here are the tools I have used from then until now, which have
+        significantly contributed to my development and expertise:
       </p>
 
       <Tools />

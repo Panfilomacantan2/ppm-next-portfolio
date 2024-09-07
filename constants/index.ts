@@ -47,7 +47,15 @@ export const projectLists = [
   {
     title: "Konpisko",
     description: "Description",
-    stack: ["React", "Next.js", "Typescript", "Mongodb", "Shadcn", "SWR", "ClerkJS"],
+    stack: [
+      "React",
+      "Next.js",
+      "Typescript",
+      "Mongodb",
+      "Shadcn",
+      "SWR",
+      "ClerkJS",
+    ],
     imageSrc: "/assets/konpisko.jpeg",
     githubUrl: "https://github.com/Panfilomacantan2/vite-yd3",
     demoUrl: "https://ppm-youtube-to-mp3.vercel.app/",
@@ -78,5 +86,41 @@ export const tools = [
   {
     name: "TypeScript",
     icon: "/assets/typescript.svg",
+  },
+  {
+    name: "HTML5",
+    icon: "/assets/html5.svg",
+  },
+  {
+    name: "CSS3",
+    icon: "/assets/css3.svg",
+  },
+  {
+    name: "Postman",
+    icon: "/assets/postman.svg",
+  },
+  {
+    name: "Git",
+    icon: "/assets/git.svg",
+  },
+  {
+    name: "Github",
+    icon: "/assets/github.svg",
+  },
+  {
+    name: "MySQL",
+    icon: "/assets/mysql.svg",
+  },
+  {
+    name: "ViteJs",
+    icon: "/assets/vitejs.svg",
+  },
+  {
+    name: "PHP",
+    icon: "/assets/php.svg",
+  },
+  {
+    name: "Vs Code",
+    icon: "/assets/vscode.svg",
   },
 ];

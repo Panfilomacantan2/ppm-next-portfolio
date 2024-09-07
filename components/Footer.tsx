@@ -7,7 +7,7 @@ import { SiGmail } from "react-icons/si";
 
 const Footer = () => {
   return (
-    <footer className="container flex flex-col items-start justify-between py-5 text-sm lg:flex-row lg:items-center">
+    <footer className="flex flex-col items-start justify-between px-3 py-5 text-sm lg:flex-row lg:items-center">
       <div className="flex flex-col lg:flex-row lg:space-x-10">
         <p>©{new Date().getFullYear()} panfilo.dev</p>
         <p>All Rights Reserved</p>

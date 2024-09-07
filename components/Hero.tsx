@@ -19,7 +19,7 @@ export default function HeroPage() {
         {/* Avatar */}
 
         <div className="order-1 lg:order-2 p-3 space-y-3">
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center space-y-3">
             <h3 className={`text-center text-xl lg:text-2xl lg:font-medium`}>
               {" "}
               Hi!, I&apos;m Panfilo!
@@ -54,7 +54,7 @@ export default function HeroPage() {
                 interfaces.
               </p>
 
-              <Tools />
+              <Tools length={6}/>
 
               <div className="flex items-center justify-center gap-2">
                 <Button asChild variant="secondary">
