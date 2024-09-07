@@ -6,7 +6,7 @@ import Section from "./Section";
 export default function EducationPage() {
   return (
     <Section>
-      <SectionHeading text="Education" className="mt-20" />
+      <SectionHeading text="Education" className="my-10" />
 
       <div className="flex justify-center px-3">
         <ol className="relative border-s border-gray-200 dark:border-gray-700">
