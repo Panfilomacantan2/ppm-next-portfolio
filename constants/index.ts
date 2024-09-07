@@ -41,13 +41,14 @@ export const projectLists = [
     description: "Description",
     stack: ["Next.js", "Typescript", "Shadcn", "Tailwindcss", "Zustand"],
     imageSrc: "/assets/brewcraft.jpeg",
-    githubUrl: "https://github.com/Panfilomacantan2/vite-yd3",
-    demoUrl: "https://ppm-youtube-to-mp3.vercel.app/",
+    githubUrl: "https://github.com/Panfilomacantan2/next-ppm-brewcraft",
+    demoUrl: "https://next-ppm-brewcraft.vercel.app/",
   },
 
   {
     title: "Konpisko",
-    description: "Description",
+    description:
+      "This web app is designed for creating and sharing confession messages. Users can submit confessions in real-time, and all entries are stored in a database. Users also have the ability to edit, delete, update, comment on, and like confessions.",
     stack: [
       "React",
       "Next.js",
@@ -58,8 +59,8 @@ export const projectLists = [
       "ClerkJS",
     ],
     imageSrc: "/assets/konpisko.jpeg",
-    githubUrl: "https://github.com/Panfilomacantan2/vite-yd3",
-    demoUrl: "https://ppm-youtube-to-mp3.vercel.app/",
+    githubUrl: "https://github.com/Panfilomacantan2/ppm-next-confession",
+    demoUrl: "https://ppm-next-confession.vercel.app/",
   },
 ];
 
