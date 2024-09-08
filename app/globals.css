@@ -90,10 +90,10 @@
 }
 
 [data-aos="new-animation"] {
-  background-color: none;
+  background-color: transparent; 
   transition-property: background-color;
 
   &.aos-animate {
-    background-color: #3b82f6 !important;
+    background-color: #3b82f6 !important; 
   }
 }
