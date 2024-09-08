@@ -15,7 +15,7 @@ const Tools = ({
   return (
     <section className="container">
       <div
-        className={cn("flex flex-shrink-0 flex-wrap justify-center gap-4", {
+        className={cn("flex flex-shrink-0 flex-wrap justify-center gap-4 max-w-md mx-auto", {
           className,
         })}
       >

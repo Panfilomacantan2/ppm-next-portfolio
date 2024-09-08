@@ -13,8 +13,6 @@ import { Spotlight } from "@/components/ui/Spotlight";
 export default function Home() {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
       once: true,
     });
   }, []);

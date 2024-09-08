@@ -22,7 +22,7 @@ export default function NavBar() {
           >
             {/* <Image src={Logo} alt="logo" width={50} height={50} /> */}
             <span className="text-lg">
-              Panfilo.dev<span className="text-sky-500">.</span>
+              Panfilo<span className="text-sky-500">.dev</span>
             </span>
           </Link>
           <nav className="ml-auto flex items-center space-x-4">

@@ -19,7 +19,7 @@ export default function AboutPage() {
 
       <SectionHeading text="Tools" className="mt-20" />
 
-      <p className="mx-auto my-5 max-w-md px-3 text-center text-foreground/80">
+      <p className="mx-auto my-10 max-w-md px-3 text-center text-foreground/80">
         Here are the tools I have used from then until now, which have
         significantly contributed to my development and expertise:
       </p>

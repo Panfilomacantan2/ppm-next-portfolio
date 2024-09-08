@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import NavBar from "@/components/NavBar";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Footer from "@/components/Footer";
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata = {
   title: "ppm-next-portfolio",
@@ -36,6 +37,7 @@ export default function RootLayout({
           </main>
         </ThemeProvider>
         <Footer />
+        <Toaster />
       </body>
     </html>
   );
