@@ -5,7 +5,7 @@ import Section from "./Section";
 
 export default function EducationPage() {
   return (
-    <Section>
+    <div>
       <SectionHeading text="Education" className="my-10" />
 
       <div className="flex justify-center overflow-x-hidden px-3">
@@ -104,6 +104,6 @@ export default function EducationPage() {
           </li>
         </ol>
       </div>
-    </Section>
+    </div>
   );
 }

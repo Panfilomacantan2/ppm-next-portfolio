@@ -1,6 +1,5 @@
 import type { Config } from 'tailwindcss';
 const { fontFamily } = require('tailwindcss/defaultTheme');
-const defaultTheme = require('tailwindcss/defaultTheme');
 
 const colors = require('tailwindcss/colors');
 const { default: flattenColorPalette } = require('tailwindcss/lib/util/flattenColorPalette');

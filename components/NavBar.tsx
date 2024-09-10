@@ -3,14 +3,63 @@
 import Link from "next/link";
 import { NavLinks } from "@/constants";
 import { ModeToggle } from "./ToggleDarkMode";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { LogOut } from "lucide-react";
 import { SideBar } from "./SideBar";
+import { useEffect, useState } from "react";
+import { useNavStore } from "@/store/nav";
 
 export default function NavBar() {
   const pathname = usePathname();
-  const router = useRouter();
+  const { active, setActive } = useNavStore((state) => state);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const hash = window.location.hash;
+
+    if (hash) {
+      const element = document.getElementById(hash.substring(1)); // Remove the '#' from the hash
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+        setActive(hash); // Store the full hash including '#'
+      }
+    }
+  }, [pathname, setActive]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    if (active) {
+      const element = document.querySelector(active);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [active]);
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActive(`#${entry.target.id}`);
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
 
   return (
     <nav className="fixed inset-x-0 top-0 z-50 bg-white shadow dark:bg-gray-950 lg:px-20">
@@ -27,7 +76,7 @@ export default function NavBar() {
           </Link>
           <nav className="ml-auto flex items-center space-x-4">
             {NavLinks.map((link) => {
-              const isActive = pathname === link.route;
+              const isActive = active === link.route;
               return (
                 <Link
                   key={link.route}
@@ -38,6 +87,7 @@ export default function NavBar() {
                     },
                   )}
                   href={link.route}
+                  onClick={() => setActive(link.route)}
                 >
                   {link.title}
                 </Link>

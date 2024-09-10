@@ -7,7 +7,7 @@ export const NavLinks = [
   {
     title: "About",
     value: "About",
-    route: "#about",
+    route: "#about-me",
   },
   {
     title: "Projects",

@@ -2,10 +2,11 @@ import Education from "@/components/Education";
 import SectionHeading from "@/components/SectionHeading";
 import Tools from "@/components/Tools";
 import React from "react";
+import Section from "./Section";
 
 export default function AboutPage() {
   return (
-    <section id="about" className="min-h-screen py-32">
+    <Section id="about-me" className="pt-32">
       <SectionHeading text="About Me" className="mb-10" />
 
       <p className="mx-auto max-w-md px-3 text-center text-foreground/80">
@@ -26,6 +27,6 @@ export default function AboutPage() {
 
       <Tools className="max-w-md" />
       <Education />
-    </section>
+    </Section>
   );
 }

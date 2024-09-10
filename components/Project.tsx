@@ -6,7 +6,6 @@ import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import SectionHeading from "@/components/SectionHeading";
 import { projectLists } from "@/constants";
-import { ShootingStars } from "@/components/ui/shooting-stars";
 import Section from "./Section";
 
 export default function ProjectPage() {

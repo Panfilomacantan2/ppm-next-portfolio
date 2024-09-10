@@ -15,23 +15,65 @@ import {
 } from "@/components/ui/sheet";
 import { NavLinks } from "@/constants";
 import { cn } from "@/lib/utils";
+import { useNavStore } from "@/store/nav";
 import { LogOut, Menu } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-  Home,
-  SearchSlash,
-  FolderGit2,
-  User,
-  MessageCircle,
-} from "lucide-react";
-import { IoHomeOutline } from "react-icons/io5";
-import { Tabs } from "./ui/tabs";
-import { SideBarTabs } from "./ui/sidebar-tabs";
+
+import { useEffect, useState } from "react";
 
 export function SideBar() {
   const pathname = usePathname();
+  const { active, setActive } = useNavStore((state) => state);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const hash = window.location.hash;
+
+    if (hash) {
+      const element = document.getElementById(hash.substring(1)); // Remove the '#' from the hash
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+        setActive(hash); // Store the full hash including '#'
+      }
+    }
+  }, [pathname, setActive]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    if (active) {
+      const element = document.querySelector(active);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [active]);
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActive(`#${entry.target.id}`);
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
 
   return (
     <Sheet>
@@ -42,9 +84,10 @@ export function SideBar() {
       </SheetTrigger>
       <SheetContent side="left">
         <SheetTitle>panfilo.dev</SheetTitle>
-        <nav className="flex flex-col space-y-2 mt-10">
+        <nav className="mt-10 flex flex-col space-y-2">
           {NavLinks.map((link, idx) => {
-            const isActive = pathname === link.route;
+            const isActive = active === link.route;
+
             return (
               <Link
                 key={link.route}
@@ -55,6 +98,7 @@ export function SideBar() {
                   },
                 )}
                 href={link.route}
+                onClick={() => setActive(link.route)}
               >
                 <SheetClose className="flex items-center space-x-2">
                   <p>{link.title}</p>

@@ -13,7 +13,7 @@ const Tools = ({
   // Limit to the items
   const limitedItems = tools.slice(0, length);
   return (
-    <section className="container">
+    <div className="container">
       <div
         className={cn("flex flex-shrink-0 flex-wrap justify-center gap-4 max-w-md mx-auto", {
           className,
@@ -27,7 +27,7 @@ const Tools = ({
           );
         })}
       </div>
-    </section>
+    </div>
   );
 };
 
