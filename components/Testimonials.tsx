@@ -10,7 +10,7 @@ export default function TestimonialsPage() {
     <Section id="testimonials" className="overflow-x-hidden">
       <SectionHeading text="Testimonials" className="my-10 mt-20" />
 
-      <p className="mb-5 text-center dark:text-gray-400">What my clients say</p>
+      <p className="mb-10 text-center text-foreground/60 max-w-md mx-auto px-3">I&apos;m committed to providing personal attention and dedication to every project. Here&apos;s what my clients say about working with me:</p>
 
       <InfiniteMovingCards />
 

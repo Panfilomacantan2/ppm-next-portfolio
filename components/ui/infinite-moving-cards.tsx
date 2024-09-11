@@ -98,7 +98,7 @@ export const InfiniteMovingCardsComponent = ({
                 aria-hidden="true"
                 className="-z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)] select-none"
               ></div>
-              <span className="relative z-20 text-base leading-[1.6] text-foreground/70">
+              <span className="relative z-20 text-sm leading-[1.6] text-foreground/70">
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center gap-2">
