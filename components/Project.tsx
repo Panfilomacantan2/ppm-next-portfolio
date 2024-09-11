@@ -16,7 +16,7 @@ export default function ProjectPage() {
         {projectLists.map((proj, idx) => (
           <Card
             key={idx}
-            className="h-auto w-full overflow-hidden rounded-md border transition-all duration-100 ease-in hover:border-border hover:shadow-md"
+            className="min-h-fit pb-20 w-full overflow-hidden rounded-md border transition-all duration-100 ease-in hover:border-border hover:shadow-md relative"
           >
             <CardContent className="w-full p-0">
               <div className="relative h-[200px] w-full border-b border-border">
@@ -46,8 +46,8 @@ export default function ProjectPage() {
                 </div>
                 <p className="text-sm text-foreground/70">{proj.description}</p>
               </div>
-            </CardContent>
-            <CardFooter className="flex flex-col text-sm">
+            </CardContent> 
+            <CardFooter className="text-sm absolute bottom-0 left-0 w-full">
               <div className="mt-5 flex w-full items-center justify-between text-sm">
                 <Button variant="secondary" asChild className="cursor-pointer">
                   <Link

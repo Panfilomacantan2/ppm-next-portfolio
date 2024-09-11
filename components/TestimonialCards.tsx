@@ -23,4 +23,11 @@ const testimonials = [
     title: "Civil Engineering Student",
     image: "/clients/bartolome.jpg",
   },
+  {
+    quote:
+      "I wanted to take a moment to commend you for your exceptional work. Your skills and dedication in programming are truly impressive. You are such a great programmer, Mr. Panfilo. Thank you for your help during the times we struggled with the system. The way you tackle complex problems, design elegant solutions, and write clean, efficient code sets a high standard for all of us. Your innovative approach and attention to detail not only enhance the quality of our projects but also inspire us as IT professionals.",
+    name: "Rikkalyn Shine Cumpio Velarga",
+    title: "BS Information Technology Graduate",
+    image: "/clients/velarga.jpg",
+  },
 ];

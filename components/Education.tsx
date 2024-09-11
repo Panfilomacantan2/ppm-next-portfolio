@@ -58,7 +58,7 @@ export default function EducationPage() {
               data-aos-once="false"
             ></div>
             <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-              March 2022
+              March 2019
             </time>
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
               Burauen Comprehensive National High School (Senior High School)
@@ -79,14 +79,11 @@ export default function EducationPage() {
               data-aos-once="false"
             ></div>
             <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-              March 2022
+              March 2016
             </time>
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
               Burauen National High School (Junior High School)
             </h3>
-            {/* <p className="text-base font-normal text-foreground/60">
-							All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.
-						</p> */}
           </li>
           <li className="ms-4">
             <div
@@ -95,12 +92,11 @@ export default function EducationPage() {
               data-aos-once="false"
             ></div>
             <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-              April 2022
+              April 2012
             </time>
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
               Burabod Elementary School
             </h3>
-            {/* <p className="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p> */}
           </li>
         </ol>
       </div>

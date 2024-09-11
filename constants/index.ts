@@ -39,7 +39,7 @@ export const projectLists = [
   {
     title: "BrewCraft",
     description: "Description",
-    stack: ["Next.js", "Typescript", "Shadcn", "Tailwindcss", "Zustand"],
+    stack: ["Next.js", "Typescript", "Shadcn", "Tailwindcss", "Zustand", "Accernity"],
     imageSrc: "/assets/brewcraft.jpeg",
     githubUrl: "https://github.com/Panfilomacantan2/next-ppm-brewcraft",
     demoUrl: "https://next-ppm-brewcraft.vercel.app/",
