@@ -92,7 +92,7 @@ export function SideBar() {
               <Link
                 key={link.route}
                 className={cn(
-                  "flex max-w-fit border-b-2 border-transparent text-lg transition-colors hover:border-gray-100 hover:text-gray-900 dark:hover:border-sky-800 dark:hover:text-sky-50",
+                  "flex max-w-fit border-b-2 border-transparent text-lg transition-colors hover:border-gray-100 hover:text-gray-900 dark:hover:border-sky-800 dark:hover:text-sky-50 focus:ring-0 active:ring-0 active:outline-none focus:outline-none focus:ring-transparent focus:outline-transparent",
                   {
                     "border-sky-500 dark:border-sky-500": isActive,
                   },
