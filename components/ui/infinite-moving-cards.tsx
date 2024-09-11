@@ -100,8 +100,8 @@ export const InfiniteMovingCardsComponent = ({
                 className="-z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)] select-none"
               ></div>
               <span className="relative z-20 text-sm leading-[1.6] text-foreground/70">
-                <Quote className="inline-block rotate-x" /> {item.quote}{" "}
-                <Quote className="inline-block" />
+                <Quote className="inline-block rotate-x text-foreground/30" size={18} /> {item.quote}{" "}
+                <Quote className="inline-block text-foreground/30" size={18} />
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center gap-2">
                 <div className="relative h-12 w-12 overflow-hidden rounded-full">
