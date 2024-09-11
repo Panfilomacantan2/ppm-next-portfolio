@@ -7,8 +7,8 @@ export function InfiniteMovingCards() {
   return (
     <InfiniteMovingCardsComponent
       items={testimonials}
-      direction="right"
-      speed="normal"
+      direction="left"
+      speed="fast"
       pauseOnHover={true}
       className="border-border"
     />

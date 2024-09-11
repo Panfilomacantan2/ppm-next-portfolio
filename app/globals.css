@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -97,4 +96,8 @@
   &.aos-animate {
     background-color: #3b82f6 !important;
   }
+}
+
+.rotate-x {
+  transform: rotateX(180deg) rotateY(180deg);
 }
