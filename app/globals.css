@@ -101,3 +101,9 @@
 .rotate-x {
   transform: rotateX(180deg) rotateY(180deg);
 }
+
+@layer utilities {
+  .is-active {
+    @apply border-sky-500 dark:border-sky-500;
+  }
+}

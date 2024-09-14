@@ -6,6 +6,7 @@ import SectionHeading from "./SectionHeading";
 import { motion } from "framer-motion";
 import Section from "./Section";
 import Tools from "./Tools";
+import { BackgroundLines } from "./ui/background-lines";
 
 export default function HeroPage() {
   return (
@@ -13,12 +14,10 @@ export default function HeroPage() {
       id="home"
       className={`flex min-h-screen w-full items-center justify-center`}
     >
-      
-
       <div className="grid grid-cols-1 place-items-center items-center lg:grid-cols-2 lg:gap-32 lg:pt-0">
         {/* Avatar */}
 
-        <div className="order-1 lg:order-2 p-3 space-y-3">
+        <div className="order-1 space-y-3 p-3 lg:order-2">
           <div className="flex flex-col items-center justify-center space-y-3">
             <h3 className={`text-center text-xl lg:text-2xl lg:font-medium`}>
               {" "}
@@ -26,7 +25,7 @@ export default function HeroPage() {
             </h3>
 
             <SectionHeading
-              text="[Frontend React Developer]"
+              text="Software Developer"
               className="max-w-md"
             />
           </div>
@@ -54,7 +53,7 @@ export default function HeroPage() {
                 interfaces.
               </p>
 
-              <Tools length={6}/>
+              <Tools length={6} />
 
               <div className="flex items-center justify-center gap-2">
                 <Button asChild variant="secondary">
@@ -77,7 +76,9 @@ export default function HeroPage() {
             </div>
           </motion.div>
         </div>
-        <HeroAvatar />
+        <BackgroundLines>
+          <HeroAvatar />
+        </BackgroundLines>
       </div>
     </Section>
   );

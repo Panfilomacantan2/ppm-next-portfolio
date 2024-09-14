@@ -8,7 +8,7 @@ export function InfiniteMovingCards() {
     <InfiniteMovingCardsComponent
       items={testimonials}
       direction="left"
-      speed="fast"
+      speed="normal"
       pauseOnHover={true}
       className="border-border"
     />
@@ -29,5 +29,12 @@ const testimonials = [
     name: "Rikkalyn Shine Cumpio Velarga",
     title: "BS Information Technology Graduate",
     image: "/clients/velarga.jpg",
+  },
+  {
+    quote:
+      "Me and my group mates are so impressed with the outcome of our system it's  easy to use and easy to access, it helps user to understand and   user-friendly.",
+    name: "Pauline Joy Marga",
+    title: "BS Information Technology Graduate",
+    image: "/clients/marga.jpg",
   },
 ];

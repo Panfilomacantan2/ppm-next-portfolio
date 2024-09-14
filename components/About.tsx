@@ -3,6 +3,7 @@ import SectionHeading from "@/components/SectionHeading";
 import Tools from "@/components/Tools";
 import React from "react";
 import Section from "./Section";
+import Achievements from "./Achievements";
 
 export default function AboutPage() {
   return (
@@ -17,6 +18,9 @@ export default function AboutPage() {
         exploring and creating projects with the latest technologies used in the
         IT industry.
       </p>
+
+      {/* Card */}
+      <Achievements />
 
       <SectionHeading text="Tools" className="mt-20" />
 

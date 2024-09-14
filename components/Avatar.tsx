@@ -3,15 +3,6 @@ import Image from "next/image";
 const HeroAvatar = () => {
   return (
     <div className="h-40 w-40 rounded-full lg:h-72 lg:w-72">
-      {/* <Image
-        src="/assets/profile.png"
-        alt="profile"
-        height="128"
-        width="128"
-        draggable="false"
-        className="h-full w-full bg-cover"
-      /> */}
-
       <svg viewBox="0 0 320 320">
         <defs>
           <circle id="circle-clip" cx="50%" cy="50%" r="25%" />
