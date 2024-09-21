@@ -2,9 +2,11 @@
 import Image from "next/image";
 import { CardStack } from "./ui/card-stack";
 import { cn } from "@/lib/utils";
+import SectionHeading from "./SectionHeading";
 export default function Achievements() {
   return (
-    <div className="flex h-[30rem] w-full items-center justify-center">
+    <div className="flex h-[30rem] w-full flex-col items-center justify-center">
+      <SectionHeading className="my-16" text="Achievements" />
       <CardStack items={CARDS} />
     </div>
   );

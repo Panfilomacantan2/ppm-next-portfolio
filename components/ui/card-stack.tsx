@@ -45,7 +45,7 @@ export const CardStack = ({
         return (
           <motion.div
             key={card.id}
-            className="group/card absolute flex h-72 w-72 flex-col justify-between overflow-hidden rounded-3xl border border-neutral-200 bg-white shadow-xl shadow-black/[0.1] dark:border-white/[0.1] dark:bg-black dark:shadow-white/[0.05] md:h-60 md:w-96"
+            className=" absolute flex h-72 w-72 flex-col justify-between overflow-hidden rounded-3xl border border-neutral-200 bg-white shadow-xl shadow-black/[0.1] dark:border-white/[0.1] dark:bg-black dark:shadow-white/[0.05] md:h-60 md:w-96"
             style={{
               transformOrigin: "top center",
             }}
@@ -56,7 +56,7 @@ export const CardStack = ({
             }}
           >
             <div className="h-full w-full">{card.content}</div>
-            <div className="absolute bottom-0 left-0 h-16 w-full opacity-50 transition duration-300 group-hover/card:bg-black"></div>
+            <div className="absolute bottom-0 left-0 h-16 w-full opacity-50 transition duration-300 bg-black"></div>
             <div className="absolute bottom-0 left-0 w-full p-3">
               <p className="font-medium text-white">{card.name}</p>
               <p className="font-normal text-gray-300">{card.designation}</p>
