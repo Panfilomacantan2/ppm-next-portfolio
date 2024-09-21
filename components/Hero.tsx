@@ -16,7 +16,7 @@ export default function HeroPage() {
         <div className="flex flex-col items-center justify-center space-y-3">
           <h3 className={`text-center text-xl lg:text-2xl lg:font-medium`}>
             {" "}
-            Hi!, I&apos;m Panfilo!
+            Hi, I&apos;m Panfilo!
           </h3>
 
           <SectionHeading
@@ -44,7 +44,7 @@ export default function HeroPage() {
               className={`max-w-md text-center text-base text-foreground/80 md:text-lg`}
             >
               Frontend developer crafting captivating websites with frontend
-              tools to deliver seamless user experiences and engaging
+              tools to deliver <span className="text-sky-400">seamless</span> user experiences and <span className="text-sky-400">engaging</span> {' '}
               interfaces.
             </p>
 

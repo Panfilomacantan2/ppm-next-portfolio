@@ -21,7 +21,7 @@ const Tools = ({
       >
         {limitedItems.map((tool, idx) => {
           return (
-            <div key={idx}>
+            <div key={idx} className="bg-sky-500/20 border border-border p-2 rounded-md">
               <Image src={tool.icon} height={30} width={30} alt={tool.name} />
             </div>
           );
