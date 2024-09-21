@@ -68,6 +68,8 @@ export default function ContactPage() {
         },
       );
     console.log(values);
+
+    form.reset()
   }
 
   return (
