@@ -1,13 +1,16 @@
+"use client"
+
 import Link from "next/link";
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import FloatingSidebar from "./FloatingSidebar";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-start justify-between px-3 py-5 text-sm lg:flex-row lg:items-center">
+    <footer className="relative flex flex-col items-start justify-between px-3 lg:px-20 py-5 text-sm lg:flex-row lg:items-center">
       <div className="flex flex-col lg:flex-row lg:space-x-10">
         <p>©{new Date().getFullYear()} panfilo.dev</p>
         <p>All Rights Reserved</p>
@@ -44,6 +47,9 @@ const Footer = () => {
           <SiGmail />
         </Link>
       </div>
+
+      <FloatingSidebar />
+
     </footer>
   );
 };

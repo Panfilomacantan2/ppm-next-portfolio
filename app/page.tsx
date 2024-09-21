@@ -8,7 +8,6 @@ import TestimonialsPage from "@/components/Testimonials";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Spotlight } from "@/components/ui/Spotlight";
 
 export default function Home() {
   useEffect(() => {
@@ -18,11 +17,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen w-full">
-      <Spotlight
-        className="-top-40 left-0 md:top-10"
-        fill="rgba(255,255,255,0.8)"
-      />
+    <main className="relative min-h-screen w-full">
       <Hero />
       <AboutPage />
       <ProjectPage />

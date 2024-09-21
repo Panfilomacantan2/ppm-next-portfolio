@@ -32,7 +32,7 @@ export default function NavBar() {
             ]}
             offset={0}
             activeNavClass="is-active"
-            scrollDuration="1000"
+            scrollDuration="500"
             headerBackground="false"
           >
             <nav className="ml-auto flex items-center space-x-4">
@@ -53,7 +53,6 @@ export default function NavBar() {
 
               <ModeToggle />
 
-              <SideBar />
             </nav>
           </ScrollspyNav>
         </div>
